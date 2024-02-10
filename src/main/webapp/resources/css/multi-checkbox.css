@@ -1,0 +1,85 @@
+.multi-check-box {
+	padding: 10px;
+	cursor: pointer;
+	width: 100% !important;
+	border-radius: 50px;
+	box-shadow: rgb(0 0 0 / 21%) 0px 2px 5px;
+	border: 0;
+	min-height: 42px;
+	font-family: 'Roboto', sans-serif;
+}
+
+.multi-check-box-text {
+	padding-left: 10px;
+	font-size: 15px;
+	letter-spacing: 0.2px;
+	color: darkgray;
+}
+
+.multi-check-box .k-icon {
+	font-size: 15px;
+	float: right;
+	font-weight: bolder;
+	margin-top: -4px;
+	margin-right: 5px;
+	height: 10px;
+	width: 14px;
+	color: #787878;
+}
+
+.multi-check-box-detail {
+	display: none;
+	position: absolute;
+	border: 0;
+	border-radius: 10px;
+	box-shadow: rgb(0 0 0 / 21%) 0px 2px 5px;
+	overflow-y: hidden;
+	z-index: 999;
+	background-color: #fff;
+	margin-left: 10px;
+}
+
+.multi-check-box-detail-body {
+	overflow-y: scroll;
+}
+
+.multi-check-box-detail .cont {
+	clear: both;
+	overflow: hidden;
+	padding: 2px;
+}
+
+.multi-check-box-detail .cont:hover {
+	background-color: #cfcfcf;
+}
+
+.check {
+	padding-top: 12px;
+	padding-left: 5px;
+	padding-right: 5px;
+	float: left;
+}
+
+.label {
+	padding-top: 8px !important;
+}
+
+.multi-check-box-detail-header {
+	overflow: hidden;
+	position: relative;
+	height: 35px;
+	background-color: #3d3d3d;
+}
+
+.multi-check-box-detail-header>input {
+	position: absolute;
+	top: 10px;
+	left: 7px;
+}
+
+.multi-check-box-detail-header>div {
+	position: absolute;
+	top: 5px;
+	left: 24px;
+	color: #fff;
+}

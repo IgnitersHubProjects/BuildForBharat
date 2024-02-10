@@ -1,0 +1,213 @@
+.modal {
+	background-color: rgba(0, 0, 0, 0.52);
+}
+
+@media ( min-width : 576px) {
+	.create-edit-role-modal .modal-dialog {
+		max-width: 1024px;
+	}
+}
+
+.create-edit-role-modal .modal-content {
+	height: 90vh;
+	overflow: scroll;
+	padding-bottom: 0;
+}
+
+.modal-footer--sticky {
+	position: sticky;
+	bottom: 0;
+	background-color: inherit; /* [1] */
+	z-index: 1055; /* [2] */
+}
+
+.image {
+	width: 100%;
+	height: auto;
+}
+
+.inventry_sliderbox {
+	position: relative;
+}
+
+.overlay {
+	position: absolute;
+	top: 0;
+	bottom: 0;
+	left: 0;
+	right: 0;
+	opacity: 0;
+	transition: .3s ease;
+	background-color: transparent;
+}
+
+.inventry_sliderbox:hover .overlay {
+	opacity: 1;
+}
+
+.image-controls {
+	position: absolute;
+	display: flex;
+	justify-content: space-between;
+	bottom: 0;
+	left: 0;
+	width: 100%;
+	background-color: #fff;
+	padding: 5px 10px;
+}
+
+.default-image {
+	margin-top: -1px;
+	vertical-align: middle;
+	color: red;
+}
+
+.default-image:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: #d1d3d1;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.default-image:checked:after {
+	width: 15px;
+	height: 15px;
+	border-radius: 15px;
+	top: -2px;
+	left: -1px;
+	position: relative;
+	background-color: red;
+	content: '';
+	display: inline-block;
+	visibility: visible;
+	border: 2px solid white;
+}
+
+.default-image-label {
+	font-size: smaller;
+}
+
+.image-controls-icon {
+	font-size: larger;
+	color: red;
+}
+
+#loader{
+	width: 100vw;
+	height: 100vh;
+	background-color: rgba(0,0,0,0.4);
+	position: fixed;
+	display: none;
+	justify-content: center;
+	align-items: center;
+	z-index: -1;
+}
+
+#loader.active{
+	display: flex;
+	z-index: 100000;
+}
+
+#loader.spinner-border{
+	color: #fff;
+}
+
+.map_srch-data{
+	width: 400px;
+	overflow: hidden;
+}
+
+.map-search-result-item{
+	cursor: pointer;
+}
+
+.show-on-map{
+	background: #e75a3c;
+	color: #fff;
+	border: 0;
+	border-radius: 7px;
+	font-size: 0.9rem;
+}
+
+/* span.has-error{
+	color: red;
+	font-size: 0.9rem;
+} */
+span.has-error {
+    font-size: 11px;
+    font-weight: 400;
+    display: inline-block;
+    color: #CC3333;
+    border-radius: 50px;
+    padding: 0 5px;
+    margin-top: -8px;
+    float: right;
+    line-height: 15px;
+    margin-right: 5px;
+    background: #FFEEEE;
+    border: 1px solid #CC3333;
+    white-space: nowrap;
+	position: relative;
+}
+
+span.has-error::before {
+    content: "\ef1b";
+    font-family: IcoFont !important;
+    margin-right: 2px;
+}
+#highcharts-hvheu97-0{height:300px !important;}
+
+.prod-box{
+	height: inherit;
+}
+.marker-custom {
+	width: 250px;
+	scale: 1;
+}
+
+.marker-custom .marker-item-img {
+	width: 250px;
+	height: 159px;
+}
+
+.marker-custom .marker-content {
+	background-color: #fff;
+	border-radius: 7px;
+	z-index: 20;
+	overflow: hidden;
+}
+
+.marker-custom .marker-pointer-icon {
+	z-index: -1;
+	width: 40px;
+	padding: 0px;
+	margin: 0px;
+	margin-top: -10px;
+	fill: #000;
+}
+
+.marker-custom .eye-icon svg {
+	width: 20px;
+	height: 20px;
+}
+
+.marker-custom .close-marker-icon{
+	color: rgba(0, 0, 0, 0.8);
+	right: 10px;
+	top: 10px;
+	width: 25px;
+	height: 25px;
+}
+.model-left{
+	float: left;width: 100%;
+}
+.inventory-list{
+	float: left;min-width: 300px; max-width: 400px; margin-left: 10px; min-height: 500px; background-color: white; max-height: 600px; overflow: scroll; display: none;
+}
